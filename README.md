@@ -1,4 +1,6 @@
-# kss-node loader
+[![npm version](https://badge.fury.io/js/kss-loader.svg)](https://badge.fury.io/js/kss-loader)
+
+# kss-loader
 
 > Webpack loader for [kss-node](https://github.com/kss-node/kss-node)
 
