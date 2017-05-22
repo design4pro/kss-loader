@@ -50,7 +50,7 @@ module.exports = {
 | --- | --- | --- | --- |
 | `source` |  | `string` | Source directory to recursively parse for KSS comments,homepage, and markup (relative to webpack.config.js file) |
 | `destination` | `"styleguide"` | `string` | Destination directory of style guide (relative to webpack.config.js file) |
-| `mask` | `"*.css|*.less|*.sass|*.scss|*.styl|*.stylus"` | `string` | Use a mask for detecting files containing KSS comments |
+| `mask` | `"*.css\|*.less\|*.sass\|*.scss\|*.styl\|*.stylus"` | `string` | Use a mask for detecting files containing KSS comments |
 | `config` |  | `string` | Load the kss options from a json file|
 | `builder` | `"builder/handlebars"` | `string` | Use the specified builder when building your style guide |
 | `css` |  | `array` | URL of a CSS file to include in the style guide (relative to the generated style guide) |
