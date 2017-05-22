@@ -46,22 +46,22 @@ module.exports = {
 
 ## Options
 
-|Name|Default|Type|Description|
-|---|---|---|---|
-|source||`string`|Source directory to recursively parse for KSS comments,homepage, and markup (relative to webpack.config.js file)|
-|destination|`"styleguide"`|`string`|Destination directory of style guide (relative to webpack.config.js file)|
-|mask|`"*.css|*.less|*.sass|*.scss|*.styl|*.stylus"`|`string`|Use a mask for detecting files containing KSS comments|
-|config||`string`|Load the kss options from a json file|
-|builder|`"builder/handlebars"`|`string`|Use the specified builder when building your style guide|
-|css||`array`|URL of a CSS file to include in the style guide (relative to the generated style guide)|
-|js||`array`|URL of a JavaScript file to include in the style guide (relative to the generated style guide)|
-|custom||`string`|Process a custom property name when parsing KSS comments|
-|extend||`string`|Location of modules to extend the templating system; see [http://bit.ly/kss-wiki]()|
-|homepage|`"homepage.md"`|`string`|File name of the homepage's Markdown file (relative to source)|
-|markup|`false`|`boolean`|Render "markup" templates to HTML with the placeholder text|
-|placeholder|`"[modifier class]"`|`string`|Placeholder text to use for modifier classes|
-|nav-depth|`3`|`number`|Limit the navigation to the depth specified|
-|title|`"KSS Style Guide"`|`string`|Title of the style guide|
+| Name | Default | Type | Description |
+| --- | --- | --- | --- |
+| `source` |  | `string` | Source directory to recursively parse for KSS comments,homepage, and markup (relative to webpack.config.js file) |
+| `destination` | `"styleguide"` | `string` | Destination directory of style guide (relative to webpack.config.js file) |
+| `mask` | `"*.css|*.less|*.sass|*.scss|*.styl|*.stylus"` | `string` | Use a mask for detecting files containing KSS comments |
+| `config` |  | `string` | Load the kss options from a json file|
+| `builder` | `"builder/handlebars"` | `string` | Use the specified builder when building your style guide |
+| `css` |  | `array` | URL of a CSS file to include in the style guide (relative to the generated style guide) |
+| `js` |  | `array` | URL of a JavaScript file to include in the style guide (relative to the generated style guide) |
+| `custom` |  | `string` | Process a custom property name when parsing KSS comments |
+| `extend` |  | `string` | Location of modules to extend the templating system; see [http://bit.ly/kss-wiki]() |
+| `homepage` | `"homepage.md"` | `string` | File name of the homepage's Markdown file (relative to source) |
+| `markup` | `false` | `boolean` | Render "markup" templates to HTML with the placeholder text |
+| `placeholder` | `"[modifier class]"` | `string` | Placeholder text to use for modifier classes |
+| `nav-depth` | `3` | `number` | Limit the navigation to the depth specified |
+| `title` | `"KSS Style Guide"` | `string` | Title of the style guide |
 
 
 
