@@ -1,0 +1,74 @@
+{
+  "name": "kss-node-loader",
+  "version": "0.0.1",
+  "description": "Webpack loader for kss-node",
+  "author": {
+    "name": "Rafał Wolak",
+    "email": "r.wolak@design4.pro",
+    "url": "https://www.design4.pro"
+  },
+  "main": "dist/cjs.js",
+  "engines": {
+    "node": ">=0.12.0 || >=4.3.0 <5.0.0 || >=5.10"
+  },
+  "files": [
+    "README.md",
+    "LICENSE",
+    "dist"
+  ],
+  "scripts": {
+    "build": "cross-env NODE_ENV=production babel -s true src -d dist",
+    "clean:dist": "del-cli dist",
+    "lint": "eslint ./src",
+    "prebuild": "yarn run clean:dist",
+    "prepublish": "yarn run build",
+    "release": "yarn run standard-version",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "peerDependencies": {
+    "kss": "^3.0.0-beta.18",
+    "webpack": "^2.5.1"
+  },
+  "dependencies": {
+    "loader-utils": "^1.1.0",
+    "schema-utils": "^0.3.0"
+  },
+  "devDependencies": {
+    "add": "^2.0.6",
+    "babel-cli": "^6.24.1",
+    "babel-jest": "^20.0.3",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.5.0",
+    "commitizen": "^2.9.6",
+    "cross-env": "^5.0.0",
+    "cz-conventional-changelog": "^2.0.0",
+    "del-cli": "^1.0.0",
+    "eslint": "^3.19.0",
+    "eslint-config-canonical": "^8.2.1",
+    "eslint-config-webpack": "^1.2.3",
+    "standard-version": "^4.0.0",
+    "webpack": "^2.5.1",
+    "yarn": "^0.24.4"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/design4pro/kss-node-loader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/design4pro/kss-node-loader/issues"
+  },
+  "homepage": "https://github.com/design4pro/kss-node-loader#readme",
+  "license": "MIT",
+  "keywords": [
+    "kss",
+    "kss-node",
+    "webpack",
+    "loader"
+  ]
+}
