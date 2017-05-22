@@ -60,12 +60,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/design4pro/kss-node-loader.git"
+    "url": "git+https://github.com/design4pro/kss-loader.git"
   },
   "bugs": {
-    "url": "https://github.com/design4pro/kss-node-loader/issues"
+    "url": "https://github.com/design4pro/kss-loader/issues"
   },
-  "homepage": "https://github.com/design4pro/kss-node-loader#readme",
+  "homepage": "https://github.com/design4pro/kss-loader#readme",
   "license": "MIT",
   "keywords": [
     "kss",
