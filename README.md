@@ -71,4 +71,4 @@ For more options, see [kss-node cli options](https://github.com/kss-node/kss-nod
 
 ## Example
 
-Check out the [example](https://github.com/design4pro/kss-loader/blob/master/example/kss/) directory for a simple Hello World example.
+Check out the [example](https://github.com/design4pro/kss-loader/blob/master/example/kss/) directory for a simple KSS style guide example.
