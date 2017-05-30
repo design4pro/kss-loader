@@ -1,6 +1,6 @@
 {
   "name": "kss-loader",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Webpack loader for kss-node",
   "author": {
     "name": "Rafał Wolak",
@@ -23,7 +23,8 @@
     "lint": "eslint ./src",
     "prebuild": "rimraf dist",
     "prepublish": "npm run build",
-    "release": "standard-version && npm run changelog",
+    "post-release": "./scripts/post-release.sh",
+    "release": "standard-version && npm run post-release",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "peerDependencies": {
