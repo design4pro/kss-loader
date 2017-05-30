@@ -10,19 +10,19 @@ const KSS_LOADER_CONFIG = {
   source: './scss/',
   destination: './docs/',
   // relative to source'
-  homepage: './../README.md',
+  homepage: './../README.md'
 };
 
 const extractSass = new ExtractTextPlugin({
-  filename: '[name].[contenthash].css',
-  disable: process.env.NODE_ENV === 'development',
+  filename: '[name].css',
+  disable: process.env.NODE_ENV === 'development'
 });
 
 module.exports = {
   entry: require.resolve('./scss/main.scss'),
   output: {
     path: OUT_PATH,
-    filename: '[name].css',
+    filename: '[name].css'
   },
   module: {
     rules: [
@@ -32,26 +32,26 @@ module.exports = {
         use: extractSass.extract({
           use: [
             {
-              loader: 'css-loader',
+              loader: 'css-loader'
             }, {
-              loader: 'sass-loader',
-            },
+              loader: 'sass-loader'
+            }
           ],
           // use style-loader in development
-          fallback: 'style-loader',
+          fallback: 'style-loader'
         }),
       },
       {
         test: /\.scss$/,
         exclude: /(node_modules|bower_components)/,
         use: {
-          loader: require.resolve('../../dist'),
-          options: KSS_LOADER_CONFIG,
-        },
-      },
-    ],
+          loader: 'kss-loader',
+          options: KSS_LOADER_CONFIG
+        }
+      }
+    ]
   },
   plugins: [
-    extractSass,
-  ],
+    extractSass
+  ]
 };
