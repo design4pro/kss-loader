@@ -1,7 +1,6 @@
-
 const { exec } = require('child_process');
 
-module.exports = function runKss(inputSource, options) {
+module.exports = function runKss(inputSource, options, callback) {
   const args = [];
 
   args.push('./node_modules/.bin/kss');
@@ -60,12 +59,16 @@ module.exports = function runKss(inputSource, options) {
 
   args.push(';');
   exec(args.join(' '), {
-    cwd: process.cwd(),
+    cwd: process.cwd()
   }, (e, stdout) => {
     if (e instanceof Error) {
-      console.error(`kss loader error: ${e}`);
-      throw e;
+      callback(`kss loader error: ${e}`);
+    } else {
+      console.info(stdout);
+      callback(e, {
+        stdout: stdout,
+        source: inputSource
+      });
     }
-    console.log(stdout);
   });
 };

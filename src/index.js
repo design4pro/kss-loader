@@ -18,10 +18,9 @@ function kssLoader(source) {
   // Start the rendering
   runKss(source, options, (err, result) => {
     if (err) {
-      callback(err);
-    } else {
-      callback(err, result);
+      return callback(err);
     }
+    callback(null, result.source);
   });
 }
 
