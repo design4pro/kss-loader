@@ -1,3 +1,10 @@
+<a name="0.0.0-semantically-released"></a>
+# 0.0.0-semantically-released (2017-05-30)
+
+* chore(package): travis CI git config ([e88a8bd](https://github.com/design4pro/kss-loader/commit/e88a8bd))
+
+
+
 # Change Log
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
