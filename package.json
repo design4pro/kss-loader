@@ -1,6 +1,6 @@
 {
   "name": "kss-loader",
-  "version": "0.0.0-development",
+  "version": "0.0.0-semantically-released",
   "description": "Webpack loader for kss-node",
   "author": {
     "name": "Rafał Wolak",
@@ -26,7 +26,7 @@
     "post-release": "./scripts/post-release.sh",
     "release": "npm run semantic-release && npm run post-release",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\""
   },
   "peerDependencies": {
     "kss": "^3.0.0-beta.18",
