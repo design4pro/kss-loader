@@ -1,6 +1,6 @@
 {
   "name": "kss-loader",
-  "version": "0.0.6",
+  "version": "0.0.0-development",
   "description": "Webpack loader for kss-node",
   "author": {
     "name": "Rafał Wolak",
@@ -24,7 +24,8 @@
     "prebuild": "rimraf dist",
     "prepublish": "npm run build",
     "post-release": "./scripts/post-release.sh",
-    "release": "standard-version && npm run post-release",
+    "release": "npm run semantic-release && npm run post-release",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "peerDependencies": {
@@ -47,14 +48,13 @@
     "conventional-changelog-custom-bugs": "0.0.1",
     "cross-env": "^5.0.0",
     "cz-customizable": "^5.0.0",
-    "del-cli": "^1.0.0",
     "eslint": "^3.19.0",
     "eslint-config-canonical": "^8.2.1",
     "eslint-config-webpack": "^1.2.3",
     "jscs": "^3.0.7",
     "jshint": "^2.9.4",
     "rimraf": "^2.6.1",
-    "standard-version": "^4.0.0",
+    "semantic-release": "^6.3.6",
     "webpack": "^2.5.1"
   },
   "config": {
@@ -67,7 +67,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/design4pro/kss-loader.git"
+    "url": "https://github.com/design4pro/kss-loader.git"
   },
   "bugs": {
     "url": "https://github.com/design4pro/kss-loader/issues"
