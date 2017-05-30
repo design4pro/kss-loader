@@ -12,12 +12,6 @@ Install the plugin with npm:
 npm install kss-loader --save-dev
 ```
 
-or yarn:
-
-```shell
-yarn --dev kss-loader
-```
-
 ## Usage
 
 Within your webpack configuration, you'll need to add the kss-loader to the list of modules.
