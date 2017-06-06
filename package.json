@@ -23,6 +23,7 @@
     "prebuild": "rimraf dist",
     "prepublish": "npm run build",
     "release": "release-me",
+    "release:github": "conventional-github-releaser -p angular -r 0",
     "test": "echo \"Error: no test specified\""
   },
   "dependencies": {
@@ -38,6 +39,7 @@
     "babel-polyfill": "^6.23.0",
     "babel-preset-env": "^1.5.0",
     "commitizen": "^2.9.6",
+    "conventional-github-releaser": "^1.1.11",
     "cross-env": "^5.0.0",
     "cz-conventional-changelog": "^2.0.0",
     "eslint": "^3.19.0",
