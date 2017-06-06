@@ -1,8 +1,10 @@
+sudo: false
 language: node_js
 node_js:
-  - '7'
-  - '6'
-  - '4'
+  - "4"
+  - "5"
+  - "6"
+  - "node"
 cache:
   directories:
     - node_modules
@@ -15,7 +17,7 @@ before_install:
   - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > .npmrc
   - npm i -g npm@^2.0.0
 before_script:
-  - git config --global user.name 'Travis CI'
+  - git config --global user.name 'Travis-CI'
   - git config --global user.email 'travis-ci@design4.pro'
   - npm i
 script:
