@@ -47,7 +47,7 @@
     "eslint-config-webpack": "^1.2.3",
     "jscs": "^3.0.7",
     "jshint": "^2.9.4",
-    "release-me": "^0.5.0",
+    "release-me": "^1.1.1",
     "rimraf": "^2.6.1",
     "webpack": "^2.5.1"
   },
