@@ -2,6 +2,8 @@
 
 # kss-loader
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/design4pro/kss-loader.svg)](https://greenkeeper.io/)
+
 > Webpack loader for [kss-node](https://github.com/kss-node/kss-node)
 
 ## Installation
