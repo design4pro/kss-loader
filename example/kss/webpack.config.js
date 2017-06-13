@@ -1,8 +1,10 @@
-const path = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+'use strict';
 
-const OUT_PATH = path.resolve('./css');
-const KSS_LOADER_CONFIG = {
+var path = require('path');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
+
+var OUT_PATH = path.resolve('./css');
+var KSS_LOADER_CONFIG = {
   title: 'KSS Example',
   mask: '*.scss|*.css',
   placeholder: '[modifier class]',
@@ -13,7 +15,7 @@ const KSS_LOADER_CONFIG = {
   homepage: './../README.md'
 };
 
-const extractSass = new ExtractTextPlugin({
+var extractSass = new ExtractTextPlugin({
   filename: '[name].css',
   disable: process.env.NODE_ENV === 'development'
 });
