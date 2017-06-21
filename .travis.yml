@@ -14,14 +14,11 @@ branches:
     - /^greenkeeper/.*$/
 notifications:
   email: false
-before_install:
-  - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > .npmrc
-  - npm i -g npm@^2.0.0
 before_script:
   - git config --global user.name 'Travis-CI'
   - git config --global user.email 'travis-ci@design4.pro'
-  - npm i
 script:
-  - npm run build
+  - npm run test:debug
+  - npm run test:check-coverage
 after_success:
-  - npm run release
+  - npm run report-coverage

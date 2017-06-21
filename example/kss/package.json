@@ -13,7 +13,7 @@
     "css-loader": "^0.28.1",
     "extract-text-webpack-plugin": "^2.1.0",
     "kss": "^3.0.0-beta.18",
-    "kss-loader": "^0.0.3",
+    "kss-loader": "file: ./../../../../kss-loader",
     "node-sass": "^4.5.3",
     "sass-loader": "^6.0.5",
     "style-loader": "^0.17.0",

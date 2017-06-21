@@ -1,6 +1,24 @@
-dist
+# OS
+.DS_Store
+
+# node.js & npm
 node_modules
-*.log
+.nyc_output
+npm-debug.log
+
+# Editor files
+/.project
+/.settings
+/.idea
+/.vscode
+
+# coverage
+coverage
+
+# build
+/dist
+/tmp
+
+# example
 example/kss/docs
 example/kss/css
-.idea
