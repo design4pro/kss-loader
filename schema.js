@@ -4,6 +4,10 @@ module.exports = {
   additionalProperties: false,
   type: 'object',
   properties: {
+    config: {
+      type: 'string',
+      description: 'Load the kss options from a json file',
+    },
     source: {
       type: 'string',
       description: 'Source directory to recursively parse for KSS comments, homepage, and markup',
@@ -21,6 +25,13 @@ module.exports = {
     builder: {
       type: 'string',
       description: 'Use the specified builder when building your style guide',
+    },
+    custom: {
+      type: 'array',
+      items: {
+        type: 'string',
+      },
+      description: 'Process a custom property name when parsing KSS comments',
     },
     css: {
       type: 'array',
