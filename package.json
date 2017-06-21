@@ -1,6 +1,6 @@
 {
   "name": "kss-loader",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Webpack loader for kss-node",
   "author": {
     "name": "Rafał Wolak",
@@ -52,7 +52,7 @@
     "url": "https://github.com/design4pro/kss-loader.git"
   },
   "bugs": {
-    "url": "https://github.com/design4pro/kss-loader/issues"
+    "url": "https://github.com/design4pro/kss-loader/issues/"
   },
   "homepage": "https://github.com/design4pro/kss-loader#readme",
   "license": "MIT",

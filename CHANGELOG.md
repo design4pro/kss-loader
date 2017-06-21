@@ -1,5 +1,13 @@
 # Change Log
 
+<a name="0.3.0"></a>
+# 0.3.0 (2017-06-21)
+
+* feat(package): default config file, additional schema validation ([603d029](https://github.com/design4pro/kss-loader/commit/603d029))
+* chore(package): ignore things ([3ac9dde](https://github.com/design4pro/kss-loader/commit/3ac9dde))
+
+
+
 <a name="0.2.0"></a>
 # 0.2.0 (2017-06-13)
 
