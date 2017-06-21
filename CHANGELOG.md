@@ -1,5 +1,12 @@
 # Change Log
 
+<a name="0.3.2"></a>
+## 0.3.2 (2017-06-21)
+
+* fix(package): error messages ([211f995](https://github.com/design4pro/kss-loader/commit/211f995))
+
+
+
 <a name="0.3.1"></a>
 ## 0.3.1 (2017-06-21)
 
