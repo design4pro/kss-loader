@@ -1,5 +1,12 @@
 # Change Log
 
+<a name="0.3.1"></a>
+## 0.3.1 (2017-06-21)
+
+* refactor(package): modifications in console messages ([8761846](https://github.com/design4pro/kss-loader/commit/8761846))
+
+
+
 <a name="0.3.0"></a>
 # 0.3.0 (2017-06-21)
 
