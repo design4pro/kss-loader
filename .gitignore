@@ -20,5 +20,5 @@ coverage
 /tmp
 
 # example
-example/kss/docs
-example/kss/css
+example/docs
+example/css

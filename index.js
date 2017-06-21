@@ -23,10 +23,11 @@ module.exports = function (source) {
 
   // Start the rendering
   runKss(source, options, function (err, result) {
-    if (err) {
-      return callback(err);
+    if (result) {
+      callback(null, result.source);
+    } else {
+      callback(err);
+      return;
     }
-
-    callback(null, result.source);
   });
 };
