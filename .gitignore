@@ -22,3 +22,7 @@ coverage
 # example
 example/docs
 example/css
+
+/test/scss/spec
+/test/sass/spec
+/test/output
