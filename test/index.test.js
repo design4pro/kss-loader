@@ -78,8 +78,12 @@ describe("sass-loader", function () {
             rules: [{
               test: /\.scss$/,
               use: [
-                { loader: testLoader.filename },
-                { loader: "sass-loader" },
+                {
+                  loader: testLoader.filename
+                },
+                {
+                  loader: "sass-loader"
+                },
                 {
                   loader: pathToKssLoader,
                   options: {
