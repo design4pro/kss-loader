@@ -1,5 +1,12 @@
 # Change Log
 
+<a name="0.3.5"></a>
+## 0.3.5 (2017-07-04)
+
+* chore(package): npm ignore update ([9ba1e6d](https://github.com/design4pro/kss-loader/commit/9ba1e6d))
+
+
+
 <a name="0.3.4"></a>
 ## 0.3.4 (2017-07-04)
 
