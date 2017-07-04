@@ -1,5 +1,12 @@
 # Change Log
 
+<a name="0.3.4"></a>
+## 0.3.4 (2017-07-04)
+
+* chore(package): update dependencies ([a97e8ae](https://github.com/design4pro/kss-loader/commit/a97e8ae))
+
+
+
 <a name="0.3.3"></a>
 ## 0.3.3 (2017-07-04)
 
