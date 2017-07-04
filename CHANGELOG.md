@@ -1,5 +1,12 @@
 # Change Log
 
+<a name="0.4.0"></a>
+# 0.4.0 (2017-07-04)
+
+* feat(package): code refactor, css npm ([6983dba](https://github.com/design4pro/kss-loader/commit/6983dba))
+
+
+
 <a name="0.3.9"></a>
 ## 0.3.9 (2017-07-04)
 
