@@ -1,5 +1,12 @@
 # Change Log
 
+<a name="0.4.1"></a>
+## 0.4.1 (2017-07-04)
+
+* fix(package): bug fix ([b9014a1](https://github.com/design4pro/kss-loader/commit/b9014a1))
+
+
+
 <a name="0.4.0"></a>
 # 0.4.0 (2017-07-04)
 
