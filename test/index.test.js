@@ -1,6 +1,5 @@
 'use strict';
 
-var shell = require('shelljs');
 var fs = require('fs');
 var path = require('path');
 var webpack = require("webpack");
