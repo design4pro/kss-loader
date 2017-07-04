@@ -1,5 +1,12 @@
 # Change Log
 
+<a name="0.3.6"></a>
+## 0.3.6 (2017-07-04)
+
+* chore(package): npm update ([f51b276](https://github.com/design4pro/kss-loader/commit/f51b276))
+
+
+
 <a name="0.3.5"></a>
 ## 0.3.5 (2017-07-04)
 
