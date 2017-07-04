@@ -7,12 +7,14 @@ var runKss = require('./lib/run-kss');
 
 module.exports = function (source) {
   var options = Object.assign({}, loaderUtils.getOptions(this), {});
+
   if (this.cacheable) {
     this.cacheable();
   }
 
   // Validate options
   var validation = validateOptions(schema, options, 'KSS Loader');
+
   if (!validation) {
     throw new Error(validation.error);
   }
@@ -21,10 +23,11 @@ module.exports = function (source) {
 
   // Start the rendering
   runKss(source, options, function (err, result) {
-    if (err) {
-      return callback(err);
+    if (result) {
+      callback(null, result.source);
+    } else {
+      callback(err);
+      return;
     }
-
-    callback(null, result.source);
   });
 };

@@ -1,8 +1,6 @@
-[![npm version](https://badge.fury.io/js/kss-loader.svg)](https://badge.fury.io/js/kss-loader)
-
 # kss-loader
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/design4pro/kss-loader.svg)](https://greenkeeper.io/)
+[![travis build](https://img.shields.io/travis/design4pro/kss-loader.svg)](https://travis-ci.org/design4pro/kss-loader) [![CircleCI](https://circleci.com/gh/design4pro/kss-loader.svg?&style=shield&circle-token=4b7e0017a6fa6840e65f52e413245bbc5cfa894b)](https://circleci.com/gh/design4pro/kss-loader) [![codecov coverage](https://img.shields.io/codecov/c/gh/design4pro/kss-loader.svg)](https://codecov.io/gh/design4pro/kss-loader) [![npm](https://img.shields.io/npm/v/kss-loader.svg)](https://www.npmjs.com/package/kss-loader) [![npm](https://img.shields.io/npm/dt/kss-loader.svg)](https://www.npmjs.com/package/kss-loader) [![Greenkeeper badge](https://badges.greenkeeper.io/design4pro/kss-loader.svg)](https://greenkeeper.io/)
 
 > Webpack loader for [kss-node](https://github.com/kss-node/kss-node)
 

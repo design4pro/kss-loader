@@ -1,20 +1,22 @@
 {
   "name": "kss-loader",
-  "version": "0.2.0",
+  "version": "0.3.2",
   "description": "Webpack loader for kss-node",
   "author": {
     "name": "Rafał Wolak",
     "email": "r.wolak@design4.pro",
     "url": "https://www.design4.pro"
   },
-  "main": "dist/cjs.js",
+  "main": "index.js",
   "engines": {
     "node": ">=0.12.0 || >=4.3.0 <5.0.0 || >=5.10"
   },
   "files": [
     "README.md",
     "LICENSE",
-    "dist"
+    "lib",
+    "index.js",
+    "schema.js"
   ],
   "scripts": {
     "release": "release-me",
@@ -31,14 +33,27 @@
   },
   "devDependencies": {
     "add": "^2.0.6",
+    "chai": "^4.0.2",
+    "codecov": "^2.2.0",
     "commitizen": "^2.9.6",
     "cross-env": "^5.0.0",
     "cz-release-me": "^1.2.0",
+    "debug": "^2.6.8",
+    "git-dummy-commit": "^1.3.0",
+    "istanbul": "^0.4.5",
     "jscs": "^3.0.7",
     "jshint": "^2.9.4",
+    "kss": "^3.0.0-beta.18",
+    "mocha": "^3.4.2",
+    "mock-git": "1.0.3",
+    "node-sass": "^4.5.3",
+    "nyc": "^11.0.2",
+    "raw-loader": "^0.5.1",
     "release-me": "^1.3.0",
     "rimraf": "^2.6.1",
-    "webpack": "^2.5.1"
+    "sass-loader": "^6.0.6",
+    "webpack": "^2.5.1",
+    "webpack-merge": "^4.1.0"
   },
   "config": {
     "commitizen": {
@@ -50,7 +65,7 @@
     "url": "https://github.com/design4pro/kss-loader.git"
   },
   "bugs": {
-    "url": "https://github.com/design4pro/kss-loader/issues"
+    "url": "https://github.com/design4pro/kss-loader/issues/"
   },
   "homepage": "https://github.com/design4pro/kss-loader#readme",
   "license": "MIT",
