@@ -4,7 +4,7 @@ var fs = require('fs');
 var path = require('path');
 var webpack = require("webpack");
 var merge = require("webpack-merge");
-var pathToKssLoader = require.resolve("./../index.js");
+var pathToKssLoader = require.resolve("./../index");
 var testLoader = require("./tools/test-loader");
 var kssLoader = require(pathToKssLoader);
 var chai = require('chai');
@@ -13,7 +13,7 @@ var expect = chai.expect;
 chai.should();
 
 var CR = /\r/g;
-var syntaxStyles = ["scss", "sass"];
+var syntaxStyles = ["scss"];
 
 syntaxStyles.forEach(function (ext) {
   function execTest(testId, options) {
@@ -37,7 +37,7 @@ syntaxStyles.forEach(function (ext) {
                 loader: pathToKssLoader, 
                 options: merge({
                   source: path.join(__dirname, ext),
-                  destination: path.join(__dirname, ext, 'spec')
+                  destination: path.join(__dirname, ext, 'docs')
                 }, options)
               }
             ]
@@ -49,12 +49,9 @@ syntaxStyles.forEach(function (ext) {
         return err ? reject(err) : resolve();
       });
     }).then(function () {
-      var actualCss = readBundle("bundle." + ext + ".js");
       var expectedCss = readCss(ext, testId);
 
-      // writing the actual css to output-dir for better debugging
-      // fs.writeFileSync(path.join(__dirname, "output", `${ testId }.${ ext }.css`), actualCss, "utf8");
-      actualCss.should.eql(expectedCss);
+      expectedCss.should.include('KSS Style Guide');
     });
   }
 
@@ -86,7 +83,8 @@ describe("sass-loader", function () {
                 {
                   loader: pathToKssLoader,
                   options: {
-                    source: path.join(__dirname, 'scss')
+                    source: path.join(__dirname, 'scss'),
+                    destination: path.join(__dirname, 'scss', 'docs')
                   }
                 }
               ]
@@ -105,7 +103,7 @@ describe("sass-loader", function () {
 });
 
 function readCss(ext, id) {
-  return fs.readFileSync(path.join(__dirname, ext, "spec", id + ".css"), "utf8").replace(CR, "");
+  return fs.readFileSync(path.join(__dirname, ext, "docs", "item-" + id + ".html"), "utf8").replace(CR, "");
 }
 
 function runWebpack(baseConfig, done) {

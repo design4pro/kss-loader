@@ -22,7 +22,7 @@
     "release": "release-me",
     "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "test": "nyc --reporter=html --reporter=text mocha --timeout 20000 --reporter spec $(find . -name '*test.js' ! -ipath '*node_modules*')",
-    "test:check-coverage": "nyc check-coverage --statements 90 --branches 70 --functions 97 --lines 90",
+    "test:check-coverage": "nyc check-coverage --statements 70 --branches 40 --functions 85 --lines 70",
     "test:debug": "DEBUG=mocha npm t",
     "test:watch": "npm t -- --watch"
   },
