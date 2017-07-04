@@ -1,5 +1,12 @@
 # Change Log
 
+<a name="0.3.7"></a>
+## 0.3.7 (2017-07-04)
+
+* chore(package): update ([9a58f0f](https://github.com/design4pro/kss-loader/commit/9a58f0f))
+
+
+
 <a name="0.3.6"></a>
 ## 0.3.6 (2017-07-04)
 
