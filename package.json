@@ -1,6 +1,6 @@
 {
   "name": "kss-loader",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "Webpack loader for kss-node",
   "author": {
     "name": "Rafał Wolak",

@@ -1,5 +1,16 @@
 # Change Log
 
+<a name="0.3.3"></a>
+## 0.3.3 (2017-07-04)
+
+* test(ci): circle ci ([94f31bc](https://github.com/design4pro/kss-loader/commit/94f31bc))
+* test(ci): fix ([fbfe259](https://github.com/design4pro/kss-loader/commit/fbfe259))
+* test(ci): new test ([54a00f1](https://github.com/design4pro/kss-loader/commit/54a00f1))
+* test(travis): dependencies update ([acc1cc7](https://github.com/design4pro/kss-loader/commit/acc1cc7))
+* test(travis): new test ([a78192c](https://github.com/design4pro/kss-loader/commit/a78192c))
+
+
+
 <a name="0.3.2"></a>
 ## 0.3.2 (2017-06-21)
 
