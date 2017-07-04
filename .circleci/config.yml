@@ -1,0 +1,33 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/kss-loader
+    docker:
+      - image: circleci/node:6
+      - image: circleci/node:7
+      - image: circleci/node:latest
+    steps:
+      - checkout
+      - run:
+          name: 'Add git user'
+          command: |
+            git config --global user.name 'Travis-CI'
+            git config --global user.email 'travis-ci@design4.pro'
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          name: 'Install npm'
+          command: npm install
+      - save_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - .node_modules
+      - run:
+          name: 'Test'
+          command: npm run test:debug
+      - run:
+          name: 'Check coverage'
+          command: npm run test:check-coverage
+      - run:
+          name: 'Report coverage'
+          command: npm run report-coverage
