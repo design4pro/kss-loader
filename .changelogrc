@@ -7,22 +7,17 @@
     {
       "key": "feat",
       "name": "Features",
-      "description": "A new feature"
+      "description": "✨  A new feature (note: this will indicate a release)"
     },
     {
       "key": "fix",
       "name": "Bug Fixes",
-      "description": "A bug fix"
+      "description": "🛠  A bug fix (note: this will indicate a release)"
     },
     {
       "key": "perf",
       "name": "Performance Improvements",
       "description": "A code change that improves performance"
-    },
-    {
-      "key": "revert",
-      "name": "Reverts",
-      "commitable": false
     },
     {
       "key": "docs",
@@ -32,25 +27,37 @@
     {
       "key": "style",
       "name": "Styles",
-      "description": "Changes that do not affect the meaning of the code\n(white-space, formatting, missing semi-colons, etc)",
+      "description": "Changes that do not affect the meaning of the code\n                  (white-space, formatting, missing semi-colons, etc)",
       "hide": true
     },
     {
       "key": "refactor",
       "name": "Code Refactoring",
-      "description": "A code change that neither fixes a bug or adds a feature",
+      "description": "A code change that neither fixes a bug nor adds a feature",
       "hide": true
     },
     {
       "key": "test",
       "name": "Tests",
-      "description": "Adding missing tests",
-      "hide": true
+      "description": "A code change that improves performance",
+      "hide": false
     },
     {
       "key": "chore",
       "name": "Chores",
-      "description": "Changes to the build process or auxiliary tools\nand libraries such as documentation generation"
+      "description": "Changes to the build process or auxiliary tools\n                  and libraries such as documentation generation",
+      "hide": false
+    },
+    {
+      "key": "revert",
+      "name": "Reverts",
+      "description": "Revert to a commit",
+      "commitable": false
+    },
+    {
+      "key": "WIP",
+      "name": "WIP",
+      "description": "Work in progress"
     }
   ],
   "scopes": [

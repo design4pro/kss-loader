@@ -8,8 +8,15 @@
     "url": "https://www.design4.pro"
   },
   "main": "index.js",
+  "files":[
+    "lib",
+    "index.js",
+    "LICENSE.md",
+    "README.md",
+    "schema.js"
+  ],
   "scripts": {
-    "release": "release-me",
+    "release": "release-me --release-count=0",
     "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "test": "nyc --reporter=html --reporter=text mocha --timeout 20000 --reporter spec $(find . -name '*test.js' ! -ipath '*node_modules*')",
     "test:check-coverage": "nyc check-coverage --statements 70 --branches 40 --functions 85 --lines 70",
