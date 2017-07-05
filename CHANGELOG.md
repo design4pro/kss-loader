@@ -1,5 +1,18 @@
 # Change Log
 
+<a name="0.4.2"></a>
+## 0.4.2 (2017-07-05)
+
+* chore(package): npm update ([3809b02](https://github.com/design4pro/kss-loader/commit/3809b02))
+* chore(package): update dependencies ([a87ead1](https://github.com/design4pro/kss-loader/commit/a87ead1))
+* chore(travis): whitelist greenkeeper branches ([d4ec30b](https://github.com/design4pro/kss-loader/commit/d4ec30b))
+* Merge branch 'master' into greenkeeper/initial ([10eaefa](https://github.com/design4pro/kss-loader/commit/10eaefa))
+* Merge branch 'master' into greenkeeper/initial ([33d1311](https://github.com/design4pro/kss-loader/commit/33d1311))
+* Merge pull request #1 from design4pro/greenkeeper/initial ([0abec0e](https://github.com/design4pro/kss-loader/commit/0abec0e))
+* docs(readme): add Greenkeeper badge ([fc7b5fa](https://github.com/design4pro/kss-loader/commit/fc7b5fa))
+
+
+
 <a name="0.4.1"></a>
 ## 0.4.1 (2017-07-04)
 
